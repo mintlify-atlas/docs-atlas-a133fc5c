@@ -1,0 +1,170 @@
+{
+  "projectType": "saas",
+  "projectName": "Omi",
+  "projectDescription": "Open-source AI wearable that captures conversations, provides summaries, action items, and executes automated tasks",
+  "theme": "palm",
+  "primaryColor": "#0D9373",
+  "lightColor": "#55D799",
+  "darkColor": "#0D9373",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "setup-hardware",
+              "setup-app"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/conversations",
+              "features/memories",
+              "features/action-items",
+              "features/chat",
+              "features/ai-personas"
+            ]
+          },
+          {
+            "group": "Hardware",
+            "pages": [
+              "hardware/overview",
+              "hardware/omi-devkit",
+              "hardware/omi-glass",
+              "hardware/diy-guide"
+            ]
+          },
+          {
+            "group": "Apps & Plugins",
+            "pages": [
+              "apps/overview",
+              "apps/installing-apps",
+              "apps/creating-apps",
+              "apps/available-apps"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Developer Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "developer/overview",
+              "developer/app-setup",
+              "developer/backend-setup",
+              "developer/firmware-setup"
+            ]
+          },
+          {
+            "group": "Backend",
+            "pages": [
+              "developer/backend/architecture",
+              "developer/backend/api-overview",
+              "developer/backend/chat-system",
+              "developer/backend/transcription",
+              "developer/backend/conversations"
+            ]
+          },
+          {
+            "group": "Mobile App",
+            "pages": [
+              "developer/mobile/architecture",
+              "developer/mobile/providers",
+              "developer/mobile/services",
+              "developer/mobile/localization"
+            ]
+          },
+          {
+            "group": "Firmware",
+            "pages": [
+              "developer/firmware/overview",
+              "developer/firmware/compile",
+              "developer/firmware/flash",
+              "developer/firmware/protocol"
+            ]
+          },
+          {
+            "group": "Building Apps",
+            "pages": [
+              "developer/apps/introduction",
+              "developer/apps/prompt-based",
+              "developer/apps/integrations",
+              "developer/apps/chat-tools",
+              "developer/apps/oauth",
+              "developer/apps/notifications"
+            ]
+          },
+          {
+            "group": "SDKs",
+            "pages": [
+              "developer/sdks/overview",
+              "developer/sdks/python",
+              "developer/sdks/react-native",
+              "developer/sdks/swift"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/authentication",
+              "api/getting-started"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/memories",
+              "api/conversations",
+              "api/action-items",
+              "api/chat",
+              "api/transcription"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "api/mcp",
+              "api/webhooks"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time conversation transcription",
+    "AI-powered memory extraction and search",
+    "Action items and task management",
+    "AI chat assistant with conversation context",
+    "Extensible plugin/app ecosystem",
+    "Multi-device support (necklace, glasses, phone)",
+    "Open-source hardware and software",
+    "Developer API and SDKs"
+  ],
+  "publicApiSurface": [
+    "POST /v1/memories",
+    "GET /v1/memories",
+    "POST /v1/conversations",
+    "GET /v1/conversations",
+    "POST /v1/action-items",
+    "GET /v1/action-items",
+    "POST /v1/chat",
+    "POST /v1/transcribe",
+    "WebSocket /listen",
+    "Python SDK: OmiClient",
+    "React Native SDK: useOmi, OmiProvider",
+    "Swift SDK: OmiKit"
+  ]
+}
